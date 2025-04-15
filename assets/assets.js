@@ -35,7 +35,7 @@ import ui_icon from "./ui-icon.png";
 import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
-import mw from "./mw.jpg";
+// import mw from "./mw.jpg";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
