@@ -77,25 +77,25 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
-  mw,
+  // mw,
 };
 
 export const workData = [
   {
-    title: "Frontend project",
-    description: "Web Design",
+    title: "Admin DAshboard",
+    description: "Admin Dashboard using React, Tailwind CSS ",
     bgImage: "/work-1.png",
     link: "https://dashboard1510-eyh5-e3nw3x082-premal-vakils-projects.vercel.app/",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Crypto Marketplace",
+    description: "React JS & CoinGecko API",
     bgImage: "/work-2.png",
     link: "https://crypto-app-git-master-premal-vakils-projects.vercel.app/",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Cart App",
+    description: "React js Redux Toolkit",
     bgImage: "/work-3.png",
     link: "https://projects2025-git-main-premal-vakils-projects.vercel.app/",
   },
