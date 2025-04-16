@@ -134,29 +134,32 @@ export const workData = [
 export const serviceData = [
   {
     icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
-  },
-  {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    title: "Frontend Development",
     description:
-      "Mobile app development involves creating software for mobile devices...",
-    link: "",
+      "I build responsive, high-performance dashboards, job boards, and booking systems using React.js, Next.js, Vite, Tailwind CSS, and Redux Toolkit. My work includes role-based routing, authentication, file uploads, chart dashboards, and dark mode support.",
+    link: "#work",
   },
   {
     icon: assets.ui_icon,
-    title: "UI/UX design",
+    title: "UI/UX & Dashboard Design",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
-    link: "",
+      "Crafting clean, modern UI with attention to detail using Tailwind CSS and Framer Motion. I specialize in admin dashboards with profile dropdowns, sidebars, modals, toast notifications, charts, and responsive layouts.",
+    link: "#work",
+  },
+
+  {
+    icon: assets.code_icon,
+    title: "API Integration & CRUD Ops",
+    description:
+      "Integrated REST APIs and Supabase in full-featured apps using Axios and React Query. I implement dynamic filtering, pagination, search, modals, and CRUD functionality with real-time updates.",
+    link: "#work",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
-    link: "",
+    icon: assets.analytics_icon,
+    title: "Performance Optimization",
+    description:
+      "Optimized React apps using React.memo, useCallback, useMemo, lazy loading, and code splitting. Also implemented Error Boundaries and suspense loading for enhanced UX.",
+    link: "#work",
   },
 ];
 

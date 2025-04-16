@@ -24,19 +24,27 @@ function Footer({ isDarkMode }) {
       <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
         <p>@ 2025 Premal Vakil. All rights reserved.</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+        <li>
+  <a target="_blank" href="https://github.com/vakilprem">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+</li>
           <li>
+  <a target="_blank" href="https://www.linkedin.com/in/premal-vakil-646404a5" rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+</li>
+          {/* <li>
             <a target="_blank" href="">
-              Github
+              WhatsApp
             </a>
-          </li>
+          </li> */}
           <li>
-            <a target="_blank" href="">
-              LinkIn
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="">
-              Twitter
+            <a
+              target="_blank"
+              href="https://wa.me/918866576379?text=Hello%20Premal%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20connect."
+            >
+              WhatsApp
             </a>
           </li>
         </ul>
