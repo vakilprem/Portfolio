@@ -80,17 +80,17 @@ import { motion } from "framer-motion";
 function Header() {
   return (
     <div className="w-12/12 max-w-3x1 text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 pt-10">
-     <motion.div
-  initial={{ scale: 0 }}
-  whileInView={{ scale: 1 }}
-  transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
->
-  <Image
-    alt="Profile Picture"
-    src={assets.profile_img}
-    className="rounded-full w-48 h-48 -ml-4" // Moves image slightly left
-  />
-</motion.div>
+      <motion.div
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+        transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+      >
+        <Image
+          alt="Profile Picture"
+          src={assets.profile_img}
+          className="rounded-full w-48 h-48 -ml-4" // Moves image slightly left
+        />
+      </motion.div>
 
       <motion.h3
         initial={{ y: -30, opacity: 0 }}
@@ -115,7 +115,9 @@ function Header() {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto font-Ovo"
       >
-        Passionate frontend developer with experience in React.js, Next.js, and modern web technologies, crafting intuitive and visually engaging user experiences.
+        Passionate frontend developer with experience in React.js, Next.js, and
+        modern web technologies, crafting intuitive and visually engaging user
+        experiences.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a
@@ -126,18 +128,26 @@ function Header() {
           className="px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent"
         >
           Contact Me
-          <Image alt="Right Arrow" src={assets.right_arrow_white} className="w-4" />
+          <Image
+            alt="Right Arrow"
+            src={assets.right_arrow_white}
+            className="w-4"
+          />
         </motion.a>
         <motion.a
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="/Vakil_Premal_ReactJS.pdf"
+          href="https://drive.google.com/uc?export=download&id=1bMW5EqbzOjoMzKnkHp8Q4pfxEToBxRmS"
           download
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black"
         >
           My Resume
-          <Image src={assets.download_icon} alt="Download Icon" className="w-4" />
+          <Image
+            src={assets.download_icon}
+            alt="Download Icon"
+            className="w-4"
+          />
         </motion.a>
       </div>
     </div>
