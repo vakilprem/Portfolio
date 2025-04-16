@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 function Contact() {
   const [result, setResult] = useState("");
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -22,6 +23,10 @@ function Contact() {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
+      setShowTooltip(true);
+      setTimeout(() => {
+        setShowTooltip(false); // Hide tooltip after 3 seconds
+      }, 3000);
       event.target.reset();
     } else {
       console.log("Error", data);
@@ -31,12 +36,13 @@ function Contact() {
 
   return (
     <motion.div
-      id="contact"
-      className="w-full px-[12%] py-4 scroll-mt-20 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
+  id="contact"
+  className="relative w-full px-[12%] py-4 scroll-mt-20 bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none"
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+>
+
       <motion.h4
         className="text-center mt-[5px] mb-2 text-lg font-Ovo"
         initial={{ opacity: 0 }}
@@ -101,6 +107,15 @@ function Contact() {
           Submit now{" "}
           <Image src={assets.right_arrow_white} alt="" className="w-4" />
         </motion.button>
+
+        {showTooltip && (
+          <div className="mt-2 text-green-600 text-sm text-center transition-opacity duration-300">
+            ✅ Email sent successfully!
+          </div>
+        )}
+
+        
+
         <p className="mt-4">{result}</p>
       </motion.form>
     </motion.div>
